@@ -9,12 +9,6 @@ body, html {
 /* Set minimum height for pages */
 [data-role="page"] {
   min-height: 100%;
-  display: none; /* Hide all pages by default */
-}
-
-/* Display active page */
-[data-role="page"].ui-page-active {
-  display: block;
 }
 
 /* Reset padding and margin for content */
@@ -55,7 +49,7 @@ body, html {
 /* Set Font Awesome icons */
 [data-role="listview"] li:before {
   font-family: 'Font Awesome 5 Free';
-  color: #fff; /* Adjust the color as needed */
+  color: #fff; 
 }
 
 /* Button styles */
@@ -64,7 +58,7 @@ body, html {
   color: white;
   padding: 10px 15px;
   text-align: center;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin-bottom: 10px;
@@ -74,7 +68,7 @@ body, html {
 }
 
 [data-role="button"]:hover {
-  background-color: #d1bb92; /* Darker Green */
+  background-color: #d1bb92; 
 }
 
 /* Page-specific styles */
@@ -85,7 +79,6 @@ body, html {
 #menu1,
 #menu2,
 #menu3,
-#menu4,
-#settings {
+#menu4 {
   background-color: #F0D1C9;
 }
