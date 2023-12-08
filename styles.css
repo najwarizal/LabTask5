@@ -9,6 +9,12 @@ body, html {
 /* Set minimum height for pages */
 [data-role="page"] {
   min-height: 100%;
+  display: none; /* Hide all pages by default */
+}
+
+/* Display active page */
+[data-role="page"].ui-page-active {
+  display: block;
 }
 
 /* Reset padding and margin for content */
@@ -79,6 +85,7 @@ body, html {
 #menu1,
 #menu2,
 #menu3,
-#menu4 {
+#menu4,
+#settings {
   background-color: #F0D1C9;
 }
