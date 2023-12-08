@@ -1,0 +1,84 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+}
+
+/* Set minimum height for pages */
+[data-role="page"] {
+  min-height: 100%;
+}
+
+/* Reset padding and margin for content */
+[data-role="content"] {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header and Footer styles */
+[data-role="header"],
+[data-role="footer"] {
+  background-color: #91A8D0; /* Serenity Blue */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Navigation Bar styles */
+[data-role="navbar"] {
+  background-color: #91A8D0;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Listview styles */
+[data-role="listview"] {
+  margin-top: 10px;
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center the list items */
+}
+
+/* List item styles */
+[data-role="listview"] li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the spacing between menu items */
+}
+
+/* Set Font Awesome icons */
+[data-role="listview"] li:before {
+  font-family: 'Font Awesome 5 Free';
+  color: #fff; /* Adjust the color as needed */
+}
+
+/* Button styles */
+[data-role="button"] {
+  background-color: #795C34; 
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+[data-role="button"]:hover {
+  background-color: #d1bb92; /* Darker Green */
+}
+
+/* Page-specific styles */
+#home {
+  background-color: #F0D1C9; /* Rose Quartz */
+}
+
+#menu1,
+#menu2,
+#menu3,
+#menu4 {
+  background-color: #F0D1C9;
+}

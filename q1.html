@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Web App</title>
+  
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home" data-theme="a" class="active" data-ajax="false">
+  <div data-role="header">
+    <h1><i class="fas fa-home"></i> Home</h1>
+  </div>
+
+  <div data-role="content">
+   <ul data-role="listview" class="horizontal-list">
+      <li><a href="#menu1"><i class="fas fa-list-alt"></i> Menu 1</a></li>
+      <li><a href="#menu2"><i class="fas fa-cog"></i> Menu 2</a></li>
+      <li><a href="#menu3"><i class="fas fa-user"></i> Menu 3</a></li>
+      <li><a href="#menu4"><i class="fas fa-cogs"></i> Menu 4</a></li>
+    </ul>
+    <p>Welcome to our mobile web app. Choose a menu to explore.</p>
+     </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Footer</h4>
+  </div>
+</div>
+
+<!-- Menu 1 -->
+<div data-role="page" id="menu1" data-theme="b">
+  <div data-role="header">
+    <h1>Menu 1</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This is the content of Menu 1.</p>
+    <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Footer</h4>
+  </div>
+</div>
+
+<!-- Menu 2 -->
+<div data-role="page" id="menu2" data-theme="c">
+  <div data-role="header">
+    <h1>Menu 2</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This is the content of Menu 2.</p>
+    <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Footer</h4>
+  </div>
+</div>
+
+<!-- Menu 3 -->
+<div data-role="page" id="menu3" data-theme="d">
+  <div data-role="header">
+    <h1>Menu 3</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This is the content of Menu 3.</p>
+    <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Footer</h4>
+  </div>
+</div>
+
+<!-- Menu 4 -->
+<div data-role="page" id="menu4" data-theme="d">
+  <div data-role="header">
+    <h1>Menu 4</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This is the content of Menu 4.</p>
+    <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Footer</h4>
+  </div>
+</div>
+
+</body>
+</html>
