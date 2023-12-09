@@ -8,48 +8,86 @@ body, html {
 
 /* Set minimum height for pages */
 [data-role="page"] {
-  min-height: 100%;
+  height: 100%;
 }
+
+[data-role="main"]{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: 100vh;
+	position: relative;
+	padding-left: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+[data-role="main"] .main_content {
+    padding-top: 50px;
+	align-items: left;
+	text-align: left;
+	font-size: 60px;
+}
+
 
 /* Reset padding and margin for content */
 [data-role="content"] {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 /* Header and Footer styles */
-[data-role="header"],
+[data-role="header"], 
 [data-role="footer"] {
-  background-color: #91A8D0; /* Serenity Blue */
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+	background-color: #91A8D0; /* Serenity Blue */
+	color: #fff;
+	text-align: center;
+	padding: 10px;
 }
 
-/* Navigation Bar styles */
-[data-role="navbar"] {
-  background-color: #91A8D0;
-  text-decoration: none; /* Remove underline */
+[data-role="nav-bar"]  {
+	background-color: #91A8D0; /* Serenity Blue */
+	display: flex;
+	align-items: center;
+	justify-content: flex; 
 }
 
-/* Listview styles */
+
+[data-role="nav-bar"] img {
+	margin-right: 100px;
+
+}
+
+/* Nav bar / Listview  */
 [data-role="listview"] {
-  margin-top: 10px;
-  list-style-type: none;
-  padding: 0;
-  text-align: center; /* Center the list items */
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center; /* Center the list items */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
-/* List item styles */
+/* Nav bar / List item */
 [data-role="listview"] li {
-  display: inline-block;
-  margin-right: 10px; /* Adjust the spacing between menu items */
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 10px; /* Adjust the spacing between menu items */
 }
 
-/* Set Font Awesome icons */
-[data-role="listview"] li:before {
-  font-family: 'Font Awesome 5 Free';
-  color: #fff; 
+
+[data-role="listview"] a {
+	padding-right: 80px;
+	padding-left: 80px;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.1s;
+}
+
+[data-role="listview"] a:hover {
+	color: #F0D1C9; 
 }
 
 /* Button styles */
@@ -71,14 +109,26 @@ body, html {
   background-color: #d1bb92; 
 }
 
-/* Page-specific styles */
-#home {
-  background-color: #F0D1C9; /* Rose Quartz */
+#home,
+#overview,
+#aboutUs,
+#services,
+#contact{
+  background-color: #F0D1C9;
 }
 
-#menu1,
-#menu2,
-#menu3,
-#menu4 {
-  background-color: #F0D1C9;
+/* Add media queries for responsive design */
+@media screen and (max-width: 600px) {
+  [data-role="main"] {
+    padding-left: 20px;
+  }
+
+  [data-role="nav-bar"] img {
+    margin-right: 20px;
+  }
+
+  [data-role="listview"] a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
